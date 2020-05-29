@@ -6,3 +6,5 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(include)
 
 add_library(TP_Algorithms_DS_3 STATIC src/ListGraph.cpp src/ArcGraph.cpp src/MatrixGraph.cpp src/SetGraph.cpp)
+add_executable(Check main.cpp)
+target_link_libraries(Check TP_Algorithms_DS_3)
